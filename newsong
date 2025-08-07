@@ -16,3 +16,13 @@ Play the beat, I’ll hum along,
 Life’s a mess, but here’s our song.
 
 
+
+import { createAsyncThunk } from "@reduxjs/toolkit";
+
+const SERVER = import.meta.env.VITE_SERVER || 'http://localhost:5000';
+
+export const addAnnouncements = createAsyncThunk('announcements',
+    async (FormData) => {
+        const response = await axios.post()
+    }
+)
